@@ -1,3 +1,5 @@
+> **Benchmark copy.** This repository is an unmodified copy of [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) at commit [`e6567c7a681ce67869dce31486a21d3a25d6931b`](https://github.com/LibreChat-AI/LibreChat/commit/e6567c7a681ce67869dce31486a21d3a25d6931b), used to benchmark CI runners on the project's own Playwright suite. It is not affiliated with or endorsed by the project. The only changes: this note, `.github/workflows/bench.yml` (run by hand only), and the project's other GitHub Actions workflows removed so nothing runs on its own. The project's license applies (see the license file). Each benchmark run's logs and test results are saved on the [`bench-results`](../../tree/bench-results) branch.
+
 <p align="center">
   <a href="https://librechat.ai">
     <img src="client/public/assets/logo.svg" height="256">
