@@ -1,0 +1,40 @@
+{
+ "at": "2026-11-18T03:25:13+00:00",
+ "suite": "librechat",
+ "repo": "BluebagAI/bench-librechat",
+ "runner": "blacksmith-4",
+ "shards": "10",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-librechat/actions/runs/44228490899",
+ "run_id": 44228490899,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 867,
+ "queue_s": 7,
+ "job_s": 7486,
+ "jobs": 10,
+ "vcpu_min": 499.1,
+ "billed_min": 130,
+ "usd": 1.04,
+ "tests": {
+  "passed": 1624,
+  "failed": 4,
+  "flaky": 6,
+  "skipped": 23,
+  "failed_tests": [
+   "scenarios/assistant-model-field.spec.ts::the model field opens and takes a pick from the keyboard @scenario:assistant-model-field-keyboard::chrome",
+   "scenarios/ci-setup.spec.ts::every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact::chrome",
+   "scenarios/deleted-storage-attachments.spec.ts::a follow-up answers after an earlier attachment is deleted from storage @scenario:deleted-history-attachment-follow-up-answers::chrome",
+   "scenarios/deleted-storage-attachments.spec.ts::the model is told which earlier attachment storage deleted @scenario:deleted-history-attachment-named-to-model::chrome"
+  ],
+  "flaky_tests": [
+   "activity-fold.spec.ts::a phase without failures shows neither pill nor peek::chrome",
+   "message-tree.spec.ts::resumes pending OAuth on the selected older branch after reload::chrome",
+   "scenarios/composer-buttons.spec.ts::Reasoning trigger keeps its look @scenario:reasoning-trigger-keeps-its-look::chrome",
+   "scenarios/composer-mention.spec.ts::an endpoint drills into its models and the pick switches the model @scenario:mention-popover-switches-model::chrome",
+   "scenarios/fold-tree.spec.ts::moving between rows travels the tree, never cutting across it @scenario:lit-route-travels-tree-between-rows::chrome",
+   "scenarios/palette-show-all.spec.ts::previews an image over the show all files dialog @scenario:show-all-files-previews-image-over-dialog::chrome"
+  ],
+  "files": 10
+ }
+}
