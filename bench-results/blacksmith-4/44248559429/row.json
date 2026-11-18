@@ -1,0 +1,36 @@
+{
+ "at": "2026-11-18T06:23:57+00:00",
+ "suite": "librechat",
+ "repo": "BluebagAI/bench-librechat",
+ "runner": "blacksmith-4",
+ "shards": "10",
+ "note": "rerun",
+ "run": "https://github.com/BluebagAI/bench-librechat/actions/runs/44248559429",
+ "run_id": 44248559429,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 1195,
+ "queue_s": 8,
+ "job_s": 8924,
+ "jobs": 10,
+ "vcpu_min": 594.9,
+ "billed_min": 155,
+ "usd": 1.24,
+ "tests": {
+  "passed": 1628,
+  "failed": 2,
+  "flaky": 4,
+  "skipped": 23,
+  "failed_tests": [
+   "scenarios/assistant-model-field.spec.ts::the model field opens and takes a pick from the keyboard @scenario:assistant-model-field-keyboard::chrome",
+   "scenarios/ci-setup.spec.ts::every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact::chrome"
+  ],
+  "flaky_tests": [
+   "scenarios/composer-numeric-reasoning.spec.ts::Inspecting numeric reasoning preserves Auto and steering @scenario:inspecting-numeric-reasoning-preserves-auto-and-steering::chrome",
+   "scenarios/composer-tool-approval.spec.ts::@scenario:thread-approval-card-defers-to-the-open-composer-review::chrome",
+   "scenarios/deleted-storage-attachments.spec.ts::a file attached this turn that storage lost still fails with the attachment error @scenario:deleted-current-attachment-still-errors::chrome",
+   "scenarios/field-variants.spec.ts::a nav button rests secondary, hovers on the nav fill and marks the current item with aria-pressed @scenario:button-nav-roles::chrome"
+  ],
+  "files": 10
+ }
+}
