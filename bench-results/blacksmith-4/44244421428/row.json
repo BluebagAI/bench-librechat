@@ -1,0 +1,38 @@
+{
+ "at": "2026-11-18T05:46:31+00:00",
+ "suite": "librechat",
+ "repo": "BluebagAI/bench-librechat",
+ "runner": "blacksmith-4",
+ "shards": "10",
+ "note": "rerun",
+ "run": "https://github.com/BluebagAI/bench-librechat/actions/runs/44244421428",
+ "run_id": 44244421428,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 1096,
+ "queue_s": 8,
+ "job_s": 8135,
+ "jobs": 10,
+ "vcpu_min": 542.3,
+ "billed_min": 141,
+ "usd": 1.128,
+ "tests": {
+  "passed": 1626,
+  "failed": 3,
+  "flaky": 5,
+  "skipped": 23,
+  "failed_tests": [
+   "activity-fold.spec.ts::a phase without failures shows neither pill nor peek::chrome",
+   "scenarios/assistant-model-field.spec.ts::the model field opens and takes a pick from the keyboard @scenario:assistant-model-field-keyboard::chrome",
+   "scenarios/ci-setup.spec.ts::every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact::chrome"
+  ],
+  "flaky_tests": [
+   "scenarios/composer-buttons.spec.ts::Reasoning trigger keeps its look @scenario:reasoning-trigger-keeps-its-look::chrome",
+   "scenarios/composer-numeric-reasoning.spec.ts::Inspecting numeric reasoning preserves Auto and steering @scenario:inspecting-numeric-reasoning-preserves-auto-and-steering::chrome",
+   "scenarios/deleted-storage-attachments.spec.ts::the model is told which earlier attachment storage deleted @scenario:deleted-history-attachment-named-to-model::chrome",
+   "scenarios/flux-polling.spec.ts::both Flux modes retain downloadable original images @scenario:flux-original-images-remain-downloadable::chrome",
+   "scenarios/fold-tree.spec.ts::moving between rows travels the tree, never cutting across it @scenario:lit-route-travels-tree-between-rows::chrome"
+  ],
+  "files": 10
+ }
+}
