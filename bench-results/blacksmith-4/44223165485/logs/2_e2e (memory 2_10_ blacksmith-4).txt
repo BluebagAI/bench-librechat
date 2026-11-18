@@ -1,0 +1,398 @@
+﻿2026-11-18T02:25:54.6281610Z Current runner version: '2.338.2'
+2026-11-18T02:25:54.6286053Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-4ina53o35a7ylv4z'
+2026-11-18T02:25:54.6286856Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-18T02:25:54.6287761Z Machine name: 'ip-172-31-73-130'
+2026-11-18T02:25:54.6289654Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T02:25:54.6290334Z Actions: read
+2026-11-18T02:25:54.6290751Z Checks: write
+2026-11-18T02:25:54.6291128Z Contents: read
+2026-11-18T02:25:54.6291530Z Metadata: read
+2026-11-18T02:25:54.6291944Z PullRequests: write
+2026-11-18T02:25:54.6292351Z ##[endgroup]
+2026-11-18T02:25:54.6293971Z Secret source: Actions
+2026-11-18T02:25:54.6294627Z Cache mode: write
+2026-11-18T02:25:54.6295126Z Prepare workflow directory
+2026-11-18T02:25:54.6670992Z The service 'redis' will not be started because the container definition has an empty image.
+2026-11-18T02:25:54.6694125Z Prepare all required actions
+2026-11-18T02:25:54.6728479Z Getting action download info
+2026-11-18T02:25:55.0934405Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+2026-11-18T02:25:55.1536805Z Download action repository 'actions/setup-node@v5' (SHA:a0853c24544627f65ddf259abe73b1d18a591444)
+2026-11-18T02:25:55.2144314Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-18T02:25:55.2862784Z Download action repository 'coldteadotai/boba@v1' (SHA:4ca4c1926a0f3307fc0d9f0f5c07aa08c2b6586a)
+2026-11-18T02:25:55.9099777Z Download action repository 'actions/upload-artifact@v6' (SHA:b7c566a772e6b6bfb58ed0dc250532a479d7789f)
+2026-11-18T02:25:56.1145341Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-18T02:25:56.1210137Z Complete job name: e2e (memory 2/10, blacksmith-4)
+2026-11-18T02:25:56.2287889Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-18T02:25:56.2378678Z ##[group]Run '/setup.sh'
+2026-11-18T02:25:56.2397676Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T02:25:56.2398997Z env:
+2026-11-18T02:25:56.2399507Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:25:56.2400145Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:25:56.2400769Z   BLACKSMITH_CHECK_RUN_ID: 134529815350
+2026-11-18T02:25:56.2401488Z   BLACKSMITH_JOB_DISPLAY_NAME: e2e (memory 2/10, blacksmith-4)
+2026-11-18T02:25:56.2402234Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-18T02:25:56.2402794Z ##[endgroup]
+2026-11-18T02:25:56.2796496Z Logging daemon started (blacksmithd for logs)
+2026-11-18T02:25:56.2950150Z Results daemon started (blacksmithd for results)
+2026-11-18T02:25:56.3176380Z Background adoption and SSH setup started (PID: 3273)
+2026-11-18T02:25:56.3177783Z 
+2026-11-18T02:25:56.3185702Z ----------------------------------------
+2026-11-18T02:25:56.3189094Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44223165485/jobs/134529815350
+2026-11-18T02:25:56.3190484Z SSH Access (using your GitHub SSH key):
+2026-11-18T02:25:56.3191619Z   ssh -p 64008 runner@blacksmith-4vcpu-ubuntu-2404-4ina53o35a7ylv4z.vm.blacksmith.sh
+2026-11-18T02:25:56.3192583Z 
+2026-11-18T02:25:56.3193265Z No GitHub SSH key? Add one at:
+2026-11-18T02:25:56.3194038Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-18T02:25:56.3194627Z 
+2026-11-18T02:25:56.3194784Z ----------------------------------------
+2026-11-18T02:25:56.3195047Z 
+2026-11-18T02:25:56.3195253Z VM ID: blacksmith-4vcpu-ubuntu-2404-4ina53o35a7ylv4z
+2026-11-18T02:25:56.3195712Z Host: production-192.240.241.169-x8664
+2026-11-18T02:25:56.3196163Z Host Agent PID: 2842871
+2026-11-18T02:25:56.3196535Z Host Agent Git SHA: 08f1db49d
+2026-11-18T02:25:56.3196910Z Host CPU Manufacturer: AuthenticAMD
+2026-11-18T02:25:56.3197356Z Blacksmith Host Generation: gen 2
+2026-11-18T02:25:56.3197761Z Petname: production-logical-imp-77b240a9
+2026-11-18T02:25:56.3198370Z Region: us-west
+2026-11-18T02:25:56.3198731Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-18T02:25:56.3201045Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-18T02:25:56.3201283Z 
+2026-11-18T02:25:56.3201448Z Enabling Blacksmith transparent cache
+2026-11-18T02:25:56.3562132Z ##[group]Run actions/checkout@v5
+2026-11-18T02:25:56.3562745Z with:
+2026-11-18T02:25:56.3563161Z   repository: BluebagAI/bench-librechat
+2026-11-18T02:25:56.3569247Z   token: ***
+2026-11-18T02:25:56.3569559Z   ssh-strict: true
+2026-11-18T02:25:56.3569878Z   ssh-user: git
+2026-11-18T02:25:56.3570199Z   persist-credentials: true
+2026-11-18T02:25:56.3570553Z   clean: true
+2026-11-18T02:25:56.3570889Z   sparse-checkout-cone-mode: true
+2026-11-18T02:25:56.3571265Z   fetch-depth: 1
+2026-11-18T02:25:56.3571582Z   fetch-tags: false
+2026-11-18T02:25:56.3571906Z   show-progress: true
+2026-11-18T02:25:56.3572248Z   lfs: false
+2026-11-18T02:25:56.3572574Z   submodules: false
+2026-11-18T02:25:56.3572903Z   set-safe-directory: true
+2026-11-18T02:25:56.3573341Z   allow-unsafe-pr-checkout: false
+2026-11-18T02:25:56.3573710Z env:
+2026-11-18T02:25:56.3574063Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:25:56.3574481Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:25:56.3574920Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:25:56.3575278Z   E2E_STREAM_STORE: memory
+2026-11-18T02:25:56.3575645Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:25:56.3576037Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:25:56.3576432Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:25:56.3576867Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:25:56.3577287Z ##[endgroup]
+2026-11-18T02:25:56.4930686Z Syncing repository: BluebagAI/bench-librechat
+2026-11-18T02:25:56.4933238Z ##[group]Getting Git version info
+2026-11-18T02:25:56.4934290Z Working directory is '/home/runner/_work/bench-librechat/bench-librechat'
+2026-11-18T02:25:56.4935593Z [command]/usr/local/bin/git version
+2026-11-18T02:25:56.5032596Z git version 2.55.0
+2026-11-18T02:25:56.5053409Z ##[endgroup]
+2026-11-18T02:25:56.5068185Z Temporarily overriding HOME='/home/runner/_work/_temp/bc054303-2c50-4bb1-8489-734758ae46d8' before making global git config changes
+2026-11-18T02:25:56.5069195Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T02:25:56.5075765Z [command]/usr/local/bin/git config --global --add safe.directory /home/runner/_work/bench-librechat/bench-librechat
+2026-11-18T02:25:56.5137898Z Deleting the contents of '/home/runner/_work/bench-librechat/bench-librechat'
+2026-11-18T02:25:56.5141243Z ##[group]Initializing the repository
+2026-11-18T02:25:56.5147589Z [command]/usr/local/bin/git init /home/runner/_work/bench-librechat/bench-librechat
+2026-11-18T02:25:56.5216982Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T02:25:56.5217860Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T02:25:56.5218570Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T02:25:56.5242493Z hint: call:
+2026-11-18T02:25:56.5243148Z hint:
+2026-11-18T02:25:56.5243714Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T02:25:56.5244235Z hint:
+2026-11-18T02:25:56.5244710Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T02:25:56.5245438Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T02:25:56.5246011Z hint:
+2026-11-18T02:25:56.5246370Z hint: 	git branch -m <name>
+2026-11-18T02:25:56.5246751Z hint:
+2026-11-18T02:25:56.5247241Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T02:25:56.5248117Z Initialized empty Git repository in /home/runner/_work/bench-librechat/bench-librechat/.git/
+2026-11-18T02:25:56.5249882Z [command]/usr/local/bin/git remote add origin https://github.com/BluebagAI/bench-librechat
+2026-11-18T02:25:56.5295402Z ##[endgroup]
+2026-11-18T02:25:56.5296089Z ##[group]Disabling automatic garbage collection
+2026-11-18T02:25:56.5303359Z [command]/usr/local/bin/git config --local gc.auto 0
+2026-11-18T02:25:56.5349842Z ##[endgroup]
+2026-11-18T02:25:56.5350743Z ##[group]Setting up auth
+2026-11-18T02:25:56.5358488Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T02:25:56.5402398Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T02:25:56.5644233Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T02:25:56.5698961Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T02:25:56.5926944Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T02:25:56.5982655Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T02:25:56.6182748Z [command]/usr/local/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T02:25:56.6242343Z ##[endgroup]
+2026-11-18T02:25:56.6253590Z ##[group]Fetching the repository
+2026-11-18T02:25:56.6255870Z [command]/usr/local/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f47a2c15bf7e16864c86c258df259ede91948fc7:refs/remotes/origin/main
+2026-11-18T02:25:58.0450104Z From https://github.com/BluebagAI/bench-librechat
+2026-11-18T02:25:58.0452051Z  * [new ref]         f47a2c15bf7e16864c86c258df259ede91948fc7 -> origin/main
+2026-11-18T02:25:58.0497784Z ##[endgroup]
+2026-11-18T02:25:58.0500431Z ##[group]Determining the checkout info
+2026-11-18T02:25:58.0502118Z ##[endgroup]
+2026-11-18T02:25:58.0507105Z [command]/usr/local/bin/git sparse-checkout disable
+2026-11-18T02:25:58.0570404Z [command]/usr/local/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-18T02:25:58.0621682Z ##[group]Checking out the ref
+2026-11-18T02:25:58.0626950Z [command]/usr/local/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-18T02:25:58.4918117Z Switched to a new branch 'main'
+2026-11-18T02:25:58.4933562Z branch 'main' set up to track 'origin/main'.
+2026-11-18T02:25:58.4937615Z ##[endgroup]
+2026-11-18T02:25:58.5022059Z [command]/usr/local/bin/git log -1 --format=%H
+2026-11-18T02:25:58.5058184Z f47a2c15bf7e16864c86c258df259ede91948fc7
+2026-11-18T02:25:58.5417863Z ##[group]Run actions/setup-node@v5
+2026-11-18T02:25:58.5418373Z with:
+2026-11-18T02:25:58.5418746Z   node-version: 24.22.1
+2026-11-18T02:25:58.5419111Z   always-auth: false
+2026-11-18T02:25:58.5419439Z   check-latest: false
+2026-11-18T02:25:58.5422514Z   token: ***
+2026-11-18T02:25:58.5422859Z   package-manager-cache: true
+2026-11-18T02:25:58.5423209Z env:
+2026-11-18T02:25:58.5423523Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:25:58.5423970Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:25:58.5424404Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:25:58.5424777Z   E2E_STREAM_STORE: memory
+2026-11-18T02:25:58.5425139Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:25:58.5425498Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:25:58.5425877Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:25:58.5426303Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:25:58.5426769Z ##[endgroup]
+2026-11-18T02:25:58.7022422Z Found in cache @ /opt/hostedtoolcache/node/24.22.1/x64
+2026-11-18T02:25:58.7030008Z (node:3663) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-18T02:25:58.7030907Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T02:25:58.7033333Z ##[group]Environment details
+2026-11-18T02:25:59.2109367Z node: v24.22.1
+2026-11-18T02:25:59.2110046Z npm: 11.19.1
+2026-11-18T02:25:59.2110551Z yarn: 1.22.22
+2026-11-18T02:25:59.2111818Z ##[endgroup]
+2026-11-18T02:25:59.2131879Z [command]/opt/hostedtoolcache/node/24.22.1/x64/bin/npm config get cache
+2026-11-18T02:25:59.3251689Z /home/runner/.npm
+2026-11-18T02:25:59.5654185Z npm cache is not found
+2026-11-18T02:25:59.6571261Z ##[group]Run actions/cache@v5
+2026-11-18T02:25:59.6571953Z with:
+2026-11-18T02:25:59.6572805Z   path: node_modules
+client/node_modules
+packages/client/node_modules
+packages/chat/node_modules
+packages/data-provider/node_modules
+packages/data-schemas/node_modules
+packages/api/node_modules
+api/node_modules
+
+2026-11-18T02:25:59.6573997Z   key: node-modules-e2e-Linux-24.22.1-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-18T02:25:59.6574566Z   enableCrossOsArchive: false
+2026-11-18T02:25:59.6574889Z   fail-on-cache-miss: false
+2026-11-18T02:25:59.6575188Z   lookup-only: false
+2026-11-18T02:25:59.6575436Z   save-always: false
+2026-11-18T02:25:59.6575703Z env:
+2026-11-18T02:25:59.6575966Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:25:59.6576304Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:25:59.6576680Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:25:59.6576979Z   E2E_STREAM_STORE: memory
+2026-11-18T02:25:59.6577467Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:25:59.6577814Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:25:59.6578228Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:25:59.6578583Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:25:59.6578914Z ##[endgroup]
+2026-11-18T02:26:00.0283673Z Cache not found for input keys: node-modules-e2e-Linux-24.22.1-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-18T02:26:00.0387504Z ##[group]Run npm ci
+2026-11-18T02:26:00.0387757Z [36;1mnpm ci[0m
+2026-11-18T02:26:00.0421075Z shell: /usr/bin/bash -e {0}
+2026-11-18T02:26:00.0421285Z env:
+2026-11-18T02:26:00.0421459Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:26:00.0421684Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:26:00.0421872Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:26:00.0422061Z   E2E_STREAM_STORE: memory
+2026-11-18T02:26:00.0422265Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:26:00.0422454Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:26:00.0422641Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:26:00.0422841Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:26:00.0423067Z ##[endgroup]
+2026-11-18T02:26:06.1136405Z npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+2026-11-18T02:26:09.0275480Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+2026-11-18T02:26:16.5379497Z npm warn deprecated source-map@0.8.0-beta.0: The work that was done in this beta branch won't be included in future versions
+2026-11-18T02:26:17.3742330Z npm warn deprecated ldapjs@2.3.3: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+2026-11-18T02:27:29.7578149Z 
+2026-11-18T02:27:29.7584223Z > LibreChat@v0.8.9-rc1 prepare
+2026-11-18T02:27:29.7584938Z > node -e "import('husky').then((h) => h.default()).catch(() => {})"
+2026-11-18T02:27:29.7585239Z 
+2026-11-18T02:27:29.8943860Z 
+2026-11-18T02:27:29.8946117Z added 2962 packages, and audited 2971 packages in 1m
+2026-11-18T02:27:29.8946533Z 
+2026-11-18T02:27:29.8946852Z 531 packages are looking for funding
+2026-11-18T02:27:29.8947195Z   run `npm fund` for details
+2026-11-18T02:27:30.0822689Z 
+2026-11-18T02:27:30.0823502Z 80 vulnerabilities (10 low, 6 moderate, 63 high, 1 critical)
+2026-11-18T02:27:30.0823743Z 
+2026-11-18T02:27:30.0823964Z To address issues that do not require attention, run:
+2026-11-18T02:27:30.0824241Z   npm audit fix
+2026-11-18T02:27:30.0824341Z 
+2026-11-18T02:27:30.0824493Z To address all issues (including breaking changes), run:
+2026-11-18T02:27:30.0824748Z   npm audit fix --force
+2026-11-18T02:27:30.0824856Z 
+2026-11-18T02:27:30.0824945Z Run `npm audit` for details.
+2026-11-18T02:27:30.0876999Z npm warn install-scripts 7 packages have install scripts not yet covered by allowScripts:
+2026-11-18T02:27:30.0877565Z npm warn install-scripts   @google/genai@2.13.0 (preinstall: echo 'preinstall: no-op')
+2026-11-18T02:27:30.0877987Z npm warn install-scripts   @scarf/scarf@1.4.0 (postinstall: node ./report.js)
+2026-11-18T02:27:30.0878951Z npm warn install-scripts   es5-ext@0.10.64 (postinstall:  node -e "try{require('./_postinstall')}catch(e){}" || exit 0)
+2026-11-18T02:27:30.0879789Z npm warn install-scripts   mongodb-memory-server@11.3.0 (postinstall: node ./postinstall.js)
+2026-11-18T02:27:30.0880507Z npm warn install-scripts   protobufjs@7.6.5 (postinstall: node scripts/postinstall)
+2026-11-18T02:27:30.0881123Z npm warn install-scripts   reova@0.4.1 (postinstall: node index.js)
+2026-11-18T02:27:30.0881848Z npm warn install-scripts   unrs-resolver@1.11.1 (postinstall: napi-postinstall unrs-resolver 1.11.1 check)
+2026-11-18T02:27:30.0882468Z npm warn install-scripts
+2026-11-18T02:27:30.0883112Z npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+2026-11-18T02:27:30.2575602Z ##[group]Run node --test .github/scripts/playwright-matrix.test.mjs .github/scripts/playwright-shards.test.mjs .github/scripts/vote-gate.test.mjs
+2026-11-18T02:27:30.2576307Z [36;1mnode --test .github/scripts/playwright-matrix.test.mjs .github/scripts/playwright-shards.test.mjs .github/scripts/vote-gate.test.mjs[0m
+2026-11-18T02:27:30.2699609Z shell: /usr/bin/bash -e {0}
+2026-11-18T02:27:30.2699807Z env:
+2026-11-18T02:27:30.2699969Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:27:30.2700178Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:27:30.2700358Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:27:30.2700516Z   E2E_STREAM_STORE: memory
+2026-11-18T02:27:30.2700683Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:27:30.2700863Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:27:30.2701040Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:27:30.2701230Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:27:30.2701433Z ##[endgroup]
+2026-11-18T02:27:30.3869060Z node:fs:483
+2026-11-18T02:27:30.3888421Z     return binding.readFileUtf8(path, stringToFlags(options.flag));
+2026-11-18T02:27:30.3917235Z                    ^
+2026-11-18T02:27:30.3917626Z 
+2026-11-18T02:27:30.3918394Z Error: ENOENT: no such file or directory, open '/home/runner/_work/bench-librechat/bench-librechat/.github/workflows/playwright-mock.yml'
+2026-11-18T02:27:30.3919004Z     at readFileSync (node:fs:483:20)
+2026-11-18T02:27:30.3919438Z     at file:///home/runner/_work/bench-librechat/bench-librechat/.github/scripts/playwright-matrix.test.mjs:11:3
+2026-11-18T02:27:30.3920005Z     at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+2026-11-18T02:27:30.3920332Z     at async node:internal/modules/esm/loader:647:26
+2026-11-18T02:27:30.3920708Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+2026-11-18T02:27:30.3921032Z   errno: -2,
+2026-11-18T02:27:30.3921271Z   code: 'ENOENT',
+2026-11-18T02:27:30.3921505Z   syscall: 'open',
+2026-11-18T02:27:30.3921862Z   path: '/home/runner/_work/bench-librechat/bench-librechat/.github/workflows/playwright-mock.yml'
+2026-11-18T02:27:30.3922370Z }
+2026-11-18T02:27:30.3922545Z 
+2026-11-18T02:27:30.3922712Z Node.js v24.22.1
+2026-11-18T02:27:30.3946530Z ✖ .github/scripts/playwright-matrix.test.mjs (54.078111ms)
+2026-11-18T02:27:31.1502908Z ✔ every listed file runs in exactly one shard, whatever the shard count (560.396164ms)
+2026-11-18T02:27:31.1507151Z ✔ shards balance recorded seconds rather than test counts (0.498417ms)
+2026-11-18T02:27:31.1511088Z ✔ an unrecorded file is estimated from its test count at the recorded mean per test (0.167925ms)
+2026-11-18T02:27:31.1519129Z ✔ the plan is deterministic and ties resolve by name and shard index (0.189075ms)
+2026-11-18T02:27:31.1523703Z ✔ a reservation hands the reserved shard less of the suite (0.806486ms)
+2026-11-18T02:27:31.1530779Z ✔ graduated skips leave the pool before planning, and never empty it (60.982687ms)
+2026-11-18T02:27:31.1559045Z ✔ a listing with load errors, or a malformed shard, fails the plan (99.989995ms)
+2026-11-18T02:27:31.1568339Z ✔ record sums every attempt per file from JSON reports (23.430644ms)
+2026-11-18T02:27:31.1572501Z ✔ record averages a file over the runs that measured it (23.333111ms)
+2026-11-18T02:27:31.1588684Z ✔ the committed timings are a flat map of spec files to seconds (0.938283ms)
+2026-11-18T02:27:31.1606126Z ✔ parseMinHours: unset, empty and 0 mean no throttle; anything but hours is invalid (1.516269ms)
+2026-11-18T02:27:31.1610610Z ✔ no throttle: a merge votes and the catch-up starts nothing (0.307328ms)
+2026-11-18T02:27:31.1615242Z ✔ a merge inside the window waits while the catch-up is live (0.331683ms)
+2026-11-18T02:27:31.1620850Z ✔ a merge votes once the newest started vote is N hours old (0.136727ms)
+2026-11-18T02:27:31.1627929Z ✔ a merge votes as before while the catch-up is not running (0.264938ms)
+2026-11-18T02:27:31.1634338Z ✔ the catch-up votes the last merge of a burst once the window opens, and not before (0.24456ms)
+2026-11-18T02:27:31.1647331Z ✔ a vote created after the newest merge, or on its commit, covers it (0.28766ms)
+2026-11-18T02:27:31.1655937Z ✔ a handed-off push run neither holds the window nor covers the merge (0.118052ms)
+2026-11-18T02:27:31.1660988Z ✔ a handoff still in flight neither covers its merge nor holds the window (0.412735ms)
+2026-11-18T02:27:31.1673798Z ✔ a cancelled vote covers nothing but holds the window, so it is retried once per window (0.710615ms)
+2026-11-18T02:27:31.1676924Z ✔ the catch-up starts nothing before any merge is on record (0.176522ms)
+2026-11-18T02:27:31.1682266Z ✔ a burst: votes keep the window, and the catch-up votes its tail (1.109936ms)
+2026-11-18T02:27:31.1687051Z ℹ tests 23
+2026-11-18T02:27:31.1693142Z ℹ suites 0
+2026-11-18T02:27:31.1697318Z ℹ pass 22
+2026-11-18T02:27:31.1701684Z ℹ fail 1
+2026-11-18T02:27:31.1708305Z ℹ cancelled 0
+2026-11-18T02:27:31.1710651Z ℹ skipped 0
+2026-11-18T02:27:31.1715525Z ℹ todo 0
+2026-11-18T02:27:31.1724947Z ℹ duration_ms 830.271873
+2026-11-18T02:27:31.1727813Z 
+2026-11-18T02:27:31.1736631Z ✖ failing tests:
+2026-11-18T02:27:31.1738948Z 
+2026-11-18T02:27:31.1739334Z test at .github/scripts/playwright-matrix.test.mjs:1:1
+2026-11-18T02:27:31.1745582Z ✖ .github/scripts/playwright-matrix.test.mjs (54.078111ms)
+2026-11-18T02:27:31.1750663Z   'test failed'
+2026-11-18T02:27:31.1796796Z ##[error]Process completed with exit code 1.
+2026-11-18T02:27:31.2089069Z ##[group]Run actions/upload-artifact@v6
+2026-11-18T02:27:31.2089260Z with:
+2026-11-18T02:27:31.2089393Z   name: results-blacksmith-4-1
+2026-11-18T02:27:31.2089551Z   path: results.json
+2026-11-18T02:27:31.2089688Z   retention-days: 30
+2026-11-18T02:27:31.2089822Z   if-no-files-found: ignore
+2026-11-18T02:27:31.2089971Z   compression-level: 6
+2026-11-18T02:27:31.2090106Z   overwrite: false
+2026-11-18T02:27:31.2090241Z   include-hidden-files: false
+2026-11-18T02:27:31.2090387Z env:
+2026-11-18T02:27:31.2090525Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:27:31.2090918Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:27:31.2091081Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:27:31.2091234Z   E2E_STREAM_STORE: memory
+2026-11-18T02:27:31.2091397Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:27:31.2091567Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:27:31.2091735Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:27:31.2091991Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:27:31.2092166Z ##[endgroup]
+2026-11-18T02:27:31.4090678Z No files were found with the provided path: results.json. No artifacts will be uploaded.
+2026-11-18T02:27:31.4599790Z ##[group]Run actions/upload-artifact@v6
+2026-11-18T02:27:31.4600079Z with:
+2026-11-18T02:27:31.4600296Z   name: playwright-report-memory-1
+2026-11-18T02:27:31.4600573Z   path: e2e/playwright-report/**
+2026-11-18T02:27:31.4600811Z   retention-days: 7
+2026-11-18T02:27:31.4601027Z   if-no-files-found: ignore
+2026-11-18T02:27:31.4601250Z   compression-level: 6
+2026-11-18T02:27:31.4601482Z   overwrite: false
+2026-11-18T02:27:31.4601681Z   include-hidden-files: false
+2026-11-18T02:27:31.4601986Z env:
+2026-11-18T02:27:31.4602949Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:27:31.4603224Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:27:31.4603447Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:27:31.4603633Z   E2E_STREAM_STORE: memory
+2026-11-18T02:27:31.4603823Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:27:31.4604010Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:27:31.4604199Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:27:31.4604470Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:27:31.4604669Z ##[endgroup]
+2026-11-18T02:27:31.5725879Z No files were found with the provided path: e2e/playwright-report/**. No artifacts will be uploaded.
+2026-11-18T02:27:31.5831045Z ##[group]Run actions/upload-artifact@v6
+2026-11-18T02:27:31.5831327Z with:
+2026-11-18T02:27:31.5831543Z   name: playwright-test-results-memory-1
+2026-11-18T02:27:31.5831850Z   path: e2e/specs/.test-results/**
+2026-11-18T02:27:31.5832149Z   retention-days: 7
+2026-11-18T02:27:31.5832360Z   if-no-files-found: ignore
+2026-11-18T02:27:31.5832598Z   compression-level: 6
+2026-11-18T02:27:31.5832803Z   overwrite: false
+2026-11-18T02:27:31.5833011Z   include-hidden-files: false
+2026-11-18T02:27:31.5833242Z env:
+2026-11-18T02:27:31.5833452Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-18T02:27:31.5833725Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-18T02:27:31.5833951Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-18T02:27:31.5834101Z   E2E_STREAM_STORE: memory
+2026-11-18T02:27:31.5834259Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-18T02:27:31.5834426Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:27:31.5834593Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:27:31.5834793Z   GITHUB_REPO_NAME: BluebagAI/bench-librechat
+2026-11-18T02:27:31.5834964Z ##[endgroup]
+2026-11-18T02:27:31.6909947Z No files were found with the provided path: e2e/specs/.test-results/**. No artifacts will be uploaded.
+2026-11-18T02:27:31.7088136Z Post job cleanup.
+2026-11-18T02:27:31.7690379Z [command]/usr/local/bin/git version
+2026-11-18T02:27:31.7729840Z git version 2.55.0
+2026-11-18T02:27:31.7752478Z Temporarily overriding HOME='/home/runner/_work/_temp/ce0af7f7-5af6-447d-9262-bdaf63926773' before making global git config changes
+2026-11-18T02:27:31.7753023Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T02:27:31.7759103Z [command]/usr/local/bin/git config --global --add safe.directory /home/runner/_work/bench-librechat/bench-librechat
+2026-11-18T02:27:31.7797788Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T02:27:31.7837031Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T02:27:31.8082909Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T02:27:31.8113034Z http.https://github.com/.extraheader
+2026-11-18T02:27:31.8124203Z [command]/usr/local/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-18T02:27:31.8158838Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T02:27:31.8450093Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T02:27:31.8510464Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T02:27:31.8748435Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-18T02:27:31.8927055Z ##[group]Run '/job_completed.sh'
+2026-11-18T02:27:31.8940277Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T02:27:31.8940637Z env:
+2026-11-18T02:27:31.8940869Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 245
+2026-11-18T02:27:31.8941161Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 874
+2026-11-18T02:27:31.8941445Z   BLACKSMITH_CHECK_RUN_ID: 134529815350
+2026-11-18T02:27:31.8941791Z   BLACKSMITH_JOB_DISPLAY_NAME: e2e (memory 2/10, blacksmith-4)
+2026-11-18T02:27:31.8942209Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-18T02:27:31.8942471Z ##[endgroup]
+2026-11-18T02:27:31.9207898Z Docker container cache not activated, skipping hash computation.
+2026-11-18T02:27:32.0714157Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-18T02:27:32.0799214Z Cleaning up orphan processes

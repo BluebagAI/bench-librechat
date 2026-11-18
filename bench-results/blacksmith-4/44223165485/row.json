@@ -1,0 +1,20 @@
+{
+ "at": "2026-11-18T02:28:20+00:00",
+ "suite": "librechat",
+ "repo": "BluebagAI/bench-librechat",
+ "runner": "blacksmith-4",
+ "shards": "10",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-librechat/actions/runs/44223165485",
+ "run_id": 44223165485,
+ "sha": "f47a2c15bf7e16864c86c258df259ede91948fc7",
+ "conclusion": "failure",
+ "wall_s": 117,
+ "queue_s": 11,
+ "job_s": 900,
+ "jobs": 10,
+ "vcpu_min": 60.0,
+ "billed_min": 20,
+ "usd": 0.16,
+ "tests": null
+}
